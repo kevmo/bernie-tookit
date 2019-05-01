@@ -1,5 +1,6 @@
-/*styles for TK project*/
+/* BERNIE KIT STYLES */
 
+/*GENERAL*/
  @import url("https://use.typekit.net/blx1jnt.css");
 
 * {
@@ -10,6 +11,7 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #205372;
 }
 body {
   display: flex;
@@ -25,8 +27,9 @@ body {
   flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
 }
 
-p {
-  font-size: 1em;
+a {
+  color: white;
+  text-decoration: underline;
 }
 
 img {
@@ -37,6 +40,95 @@ footer {
   flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
   padding: 20px;
   text-align: center;
-  background: lightgrey;
   color: white;
+}
+
+/* LET'S GIVE BEM A GO */
+
+/* BLOCKS */
+.b-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+}
+
+.b-header__h1 {
+  color: white;
+  margin: 1rem;
+}
+
+.b-header__logo {
+  height: 3rem;
+  margin: 1rem;
+}
+
+.b-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-tile {
+  background: white;
+  margin: .5em;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, .5);
+}
+
+.b-tile__h1 {
+  font-weight: 400;
+}
+
+.b-tile__p {
+  margin: 1rem;
+}
+
+.b-tile--two {
+  width: 50%;
+}
+
+.b-tile--bernie1jpg {
+  background: white url('assets/bernie1.jpg') left no-repeat;
+  background-size: 10rem;
+  background-clip: content-box;
+}
+
+.b-tile--bernie1jpg--content {
+  margin: 1rem 1rem 1rem 11rem;
+}
+
+.b-tile--bernie2jpg {
+  background: #F55B5B url('assets/bernie2.jpg') right no-repeat;
+  background-size: 10rem;
+  background-clip: content-box;
+}
+
+.b-tile__p--bernie2jpg {
+  color: white;
+  margin: 1rem 11rem 1rem 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.b-tile--three {
+  width: 33%;
+}
+
+.b-tile__h2 {
+  background-color: #147FD7;
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding: .5em;
+}
+
+/* MODIFIERS */
+.--primary-bg {
+  background-color: #147FD7;
+}
+
+.--accent {
+  color: #F55B5B;
+}
+
+.--bold {
+  font-weight: 600;
 }
