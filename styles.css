@@ -64,6 +64,7 @@ footer {
 
 .b-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -73,8 +74,53 @@ footer {
   box-shadow: -2px 2px 5px rgba(0, 0, 0, .5);
 }
 
+.b-tile__inner {
+  padding: 1rem;
+}
+
+.b-tile__inner h3 {
+  border-top: 1px solid black;
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin: 2rem 0 .25rem;
+}
+
+.b-tile__inner--firstH3 {
+  margin-top: 1rem !important;
+}
+
+.jubH3 {
+  border-top: 1px solid black;
+  height: 2rem;
+  width: 100%;
+  margin: 1rem 0 .75rem;
+  background: no-repeat bottom left/65% url('assets/jubilat-medium.svg');
+}
+
+.b-tile__inner h4 {
+  margin-bottom: 0;
+}
+
+.b-tile__inner p {
+  margin: 0;
+}
+
+.b-tile__colorchip {
+  padding: 1rem;
+  color: white;
+  margin: .5rem;
+}
+
 .b-tile__h1 {
   font-weight: 400;
+}
+
+.b-tile__h2 {
+  background-color: #147FD7;
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding: .5em;
 }
 
 .b-tile__p {
@@ -110,14 +156,7 @@ footer {
 
 .b-tile--three {
   width: 33%;
-}
-
-.b-tile__h2 {
-  background-color: #147FD7;
-  color: white;
-  width: 100%;
-  margin: 0;
-  padding: .5em;
+  min-width: 300px;
 }
 
 /* MODIFIERS */
@@ -125,8 +164,24 @@ footer {
   background-color: #147FD7;
 }
 
+.--primary {
+  color: #147FD7;
+}
+
+.secondary-bg {
+  background-color: #205372;
+}
+
+.--accent-bg {
+  background-color: #F55B5B;
+}
+
 .--accent {
   color: #F55B5B;
+}
+
+.--accentSec-bg {
+  background-color: #9B1E20;
 }
 
 .--bold {
